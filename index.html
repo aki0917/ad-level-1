@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Progrative | Advanced | Level 1</title>
+
+    <!-- CSS 読み込み -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- google font 読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS 読み込み -->
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <header class="">
+      <div class="header__left">
+        <img src="./assets/images/header.svg" alt="ヘッダーロゴ">
+      </div>
+      <div class="header__right">
+        <div class="header__elem">
+          <a href="#">About</a>
+        </div>
+        <div class="header__elem">
+          <a href="#">Stockists</a>
+        </div>
+        <div class="header__elem">
+          <a href="#">Online shop</a>
+        </div>
+        <div class="header__elem header__elem-signIn">
+          <a href="#">Sign in</a>
+        </div>
+        <div class="header__elem header__elem-cart">
+          <a href="#">
+            <img class="header__iconCrat" src="./assets/images/cart.svg" alt="カート">
+            <img class="header__iconNum" src="./assets/images/cart_01.svg" alt="カートナンバー">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="">
+      <div class="main__content">
+        <div class="main__left">
+          <div class="main__leftTitle">Life<span>+</span></div>
+          <div class="main__leftDesc">
+            <p>ステンレスの中でも最高品質であるSUS410を採用。
+              さらに、二重構造により従来より長く保温・保冷が
+              可能。
+            </p>
+            <p>
+              アウトドアシーンでは富士山登頂後も保温を持続し
+              遺憾無くパワーを発揮。
+            </p>  
+          </div>
+          <div class="main__leftInfo">
+            <p>
+              Stainless steel <br>
+              350ml / 500ml / 1000ml <br>
+              heat / cold insulation 36 hours
+            </p>
+
+            <p>
+              ステンレス合金 <br>
+              350ml / 500ml / 1000ml <br>
+              36時間保温保冷効果持続
+            </p>
+          </div>
+
+          <div class="main__leftDetail">
+            <a href="">
+              <span class="main__leftDetailText">詳細を見る</span>
+              <span class="main__leftDetailArrow"><img src="./assets/images/arrow01.svg" alt=""></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="main__center">
+          <img id="actionImage" src="./assets/images/black.png" alt="ボトル">
+        </div>
+
+        <div class="main__right">
+          <form action>
+            <div class="main__rightColors">
+              <div class="main__rightColor">
+                <input type="radio" name="color" id="color_black" class="actionColor" data-src="./assets/images/black.png" checked />
+                <label for="color_black">
+                  <img src="./assets/images/color_black.svg" alt="">
+                </label>
+              </div>
+              <div class="main__rightColor">
+                <input type="radio" name="color" id="color_white" class="actionColor"  data-src="./assets/images/white.png">
+                <label for="color_white">
+                  <img src="./assets/images/color_white.svg" alt="">
+                </label>
+              </div>
+              <div class="main__rightColor">
+                <input type="radio" name="color" id="color_green" class="actionColor" data-src="./assets/images/green.png">
+                <label for="color_green">
+                  <img src="./assets/images/color_earthGreen.svg" alt="">
+                </label>
+              </div>
+            </div>
+
+            <div class="main__rightSizes">
+              <div class="main__rightSize">
+                <input type="radio" name="size" id="size_350" class="actionSize" data-price="3,600">
+                <label for="size_350">350ml</label>
+              </div>
+              <div class="main__rightSize">
+                <input type="radio" name="size" id="size_500" class="actionSize" data-price="4,200" checked >
+                <label for="size_500">500ml</label>
+              </div>
+              <div class="main__rightSize">
+                <input type="radio" name="size" id="size_1000" class="actionSize" data-price="4,900" >
+                <label for="size_1000">1000ml</label>
+              </div>
+            </div>
+
+            <div class="main__rightInfos">
+              <div class="main__rightInfo">
+                <div class="main__rightInfoTitle">評価</div>
+                <div class="main__rightInfoStars">
+                  <img src="./assets/images/star_full.svg" alt="">
+                  <img src="./assets/images/star_full.svg" alt="">
+                  <img src="./assets/images/star_full.svg" alt="">
+                  <img src="./assets/images/star_half.svg" alt="">
+                  <img src="./assets/images/star_empty.svg" alt="">
+                </div>
+              </div>
+              <div class="main__rightInfo">
+                <div class="main__rightInfoTitle">配送予定日</div>
+                <div class="main__rightInfoText">最短翌日お届け</div>
+              </div>
+            </div>
+
+            <div class="main__rightPriceBlock">
+              <span id="actionPrice" class="main__rightPrice">4,200</span>
+              <span class="main__rightUnit">円</span>
+            </div>
+
+            <div class="main__rightActions">
+              <button class="main__rightSubmit" type="submit">カートに追加</button>
+              <button class="main__rightFav" type>
+                <img src="./assets/images/favorite_on.svg" alt="">
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <span>© Progrative by</span>
+        <span>TERRART 2022.</span>
+      </div>
+    </footer>
+  </body>
+</html>
